@@ -7,6 +7,7 @@ import (
 	"strconv"
 )
 
+// Showing menu and return choice
 func menu() int {
 	errorMessage := ""
 

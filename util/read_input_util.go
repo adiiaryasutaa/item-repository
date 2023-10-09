@@ -10,6 +10,7 @@ import (
 
 var reader = bufio.NewReader(os.Stdin)
 
+// ReadInput Just for read input
 func ReadInput() (string, error) {
 	input, err := reader.ReadString('\n')
 	input = strings.Replace(input, "\n", "", -1)
@@ -18,6 +19,7 @@ func ReadInput() (string, error) {
 	return input, err
 }
 
+// Ask Prompt a question
 func Ask(question string) string {
 	fmt.Print(question)
 
@@ -26,6 +28,7 @@ func Ask(question string) string {
 	return input
 }
 
+// PressEnter Pause program until enter is pressed
 func PressEnter() {
 	for {
 		_, key, err := keyboard.GetSingleKey()

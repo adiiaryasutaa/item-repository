@@ -4,6 +4,7 @@ import (
 	"fmt"
 )
 
+// ShowAbout Showing About App
 func ShowAbout() {
 	fmt.Println("About App (v1.0.0)")
 	fmt.Println()

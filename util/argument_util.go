@@ -2,6 +2,7 @@ package util
 
 import "os"
 
+// Arguments Get arguments after file name
 func Arguments() []string {
 	return os.Args[1:]
 }

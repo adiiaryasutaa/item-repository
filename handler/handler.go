@@ -7,12 +7,13 @@ import (
 	"item-repository/util/print"
 )
 
-func Handle(selection uint8) {
+// Handle Handling choices
+func Handle(choice uint8) {
 	if !util.ProgramRunDirectly() {
 		util.Clear()
 	}
 
-	switch selection {
+	switch choice {
 	case 1: // Add
 		m := model.NewItem(CollectItemData())
 
@@ -32,10 +33,9 @@ func Handle(selection uint8) {
 
 		model.PrintItemTable(items)
 
-		//if !util.ProgramRunDirectly() {
-		//	fmt.Print("\n(Press Enter to back)")
-		//	util.PressEnter()
-		//}
+		if util.ProgramRunDirectly() {
+			return
+		}
 
 	case 3: // Search
 		var query string
@@ -67,8 +67,16 @@ func Handle(selection uint8) {
 			model.PrintItemTable(items)
 		}
 
+		if util.ProgramRunDirectly() {
+			return
+		}
+
 	case 4: // About
 		ShowAbout()
+
+		if util.ProgramRunDirectly() {
+			return
+		}
 
 	default:
 		fmt.Println("Invalid Action")

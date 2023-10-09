@@ -2,6 +2,7 @@ package util
 
 import "strconv"
 
+// ConvertToPrice Convert a string into item price type
 func ConvertToPrice(s string) uint {
 	price, err := strconv.Atoi(s)
 
@@ -12,6 +13,7 @@ func ConvertToPrice(s string) uint {
 	return uint(price)
 }
 
+// ConvertToQuantity Convert a string into item quantity type
 func ConvertToQuantity(s string) uint {
 	return ConvertToPrice(s)
 }

@@ -8,6 +8,7 @@ import (
 	"os"
 )
 
+// GetChoice Get choice from input arguments or menu
 func GetChoice() int {
 	args := os.Args[1:]
 

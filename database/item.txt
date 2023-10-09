@@ -1,18 +1,7 @@
 "Sabun Detol",5000,20
 "Sabun Lux",4000,18
 "Beras Miskin",40000,18
-"Susu Ganyu",6000,10
-"Kodomo, Teman Baikku",4000,70
-"Sampo Detol",1000,50
-"Sampo Sunsilk Hijab",1000,76
-"Memek",70000,40
-"Pepsodent Ungu",7000,10
-"Pepsodent Merah",7000,10
-"Pepsodent Kuning",7000,10
-"Susu Milo Saset",1000,100
-"Aqua Saset",1000,100
-"Memek Rebus",1000,100
-"Kntl Puyuh",1000,100
-"Kuping Gajah",60000,600
-"MMK",0,0
-"Tai",6000,23
+"Susu Dancow",1000,900
+"Buku Tulis Kotak",7000,300
+"Buku Gambar A4",8000,200
+"Buku Gambar A4",8000,200

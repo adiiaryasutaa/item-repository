@@ -8,6 +8,7 @@ import (
 
 const filename = "./database/item.txt"
 
+// Save For saving string to file
 func Save(s string) int {
 	file, err := os.OpenFile(filename, os.O_APPEND|os.O_WRONLY, 0644)
 

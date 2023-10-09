@@ -6,10 +6,12 @@ import (
 	"runtime"
 )
 
+// ProgramRunDirectly check is program run using arguments
 func ProgramRunDirectly() bool {
 	return len(os.Args[1:]) > 0
 }
 
+// Clear clearing terminal
 func Clear() {
 	var cmd *exec.Cmd
 
